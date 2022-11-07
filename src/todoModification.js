@@ -1,11 +1,12 @@
 let temporalStorage = [];
 
-function addTodoItem(title, description, dueDate, priority) {
+function addTodoItem(title, description, dueDate, priority, category) {
 	let todo = {
 		title: title,
 		description: description,
 		dueDate: dueDate,
 		priority: priority,
+		category: category,
 	};
 	temporalStorage.push(todo);
 	return temporalStorage;
@@ -29,4 +30,13 @@ function editTodoItem(title) {
 	removeTodoItem(title);
 	addTodoItem(title);
 }
-export { addTodoItem, removeTodoItem, editTodoItem };
+
+function returnObjectArray() {
+	let objectArray = [];
+	for (const todo of temporalStorage) {
+		objectArray.push(todo);
+	}
+	return objectArray;
+}
+
+export { addTodoItem, removeTodoItem, editTodoItem, returnObjectArray };
