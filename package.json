@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Vitholu/ToDo-List#readme",
   "devDependencies": {
+    "date-fns": "^2.29.3",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   }

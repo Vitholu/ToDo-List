@@ -5,15 +5,7 @@ import {
 	returnObjectArray,
 } from './todoModification.js';
 import { categoryTodo } from './categorizeTodo.js';
+import { format } from 'date-fns';
 
-addTodoItem('title', 'desc', 'date', 'prio');
-addTodoItem('beep', 'desc', 'date', 'prio', 'wew');
-addTodoItem('das', 'desc', 'date', 'prio', 'wew');
-addTodoItem('qwe', 'desc', 'date', 'prio', 'frs');
-addTodoItem('rasq', 'desc', 'date', 'prio', 'frs');
-addTodoItem('rawr', 'desc', 'date', 'prio');
-// console.log(removeTodoItem('rawr'));
-// editTodoItem('beep');
-// console.log(returnObjectArray());
-console.log(categoryTodo('wew'));
-console.log(categoryTodo('frs'));
+let today = new Date();
+let newDate = format(new Date(today), 'MM/dd/yyyy');
