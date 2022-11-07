@@ -21,4 +21,12 @@ function removeTodoItem(title) {
 	return temporalStorage;
 }
 
-export { addTodoItem, removeTodoItem };
+function editTodoItem(title) {
+	const filteredItem = temporalStorage.filter((i) => i.title === title);
+	let editedItem = {
+		title: prompt('new title:'),
+	};
+	removeTodoItem(title);
+	addTodoItem(title);
+}
+export { addTodoItem, removeTodoItem, editTodoItem };
