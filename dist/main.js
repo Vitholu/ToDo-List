@@ -1,0 +1,1 @@
+(()=>{"use strict";let t=[];console.log(function(e,i,o,r){let l={title:"title",description:"desc",dueDate:"date",priority:"prio"};return t.push(l),t}())})();

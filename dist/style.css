@@ -2,7 +2,7 @@
 
 :root {
 	font-size: 62.5%;
-	--header-width: 5.7rem;
+	--header-width: 6rem;
 	color: white;
 }
 
@@ -36,7 +36,7 @@ body {
 	padding: 1rem;
 	flex: 1;
 	height: calc(100vh - var(--header-width));
-	border-top: 2px solid #cbd5e1;
+	border-top: 2px solid #64748b;
 	background-color: #334155;
 }
 
@@ -62,4 +62,6 @@ p {
 
 .right-side {
 	flex: 7;
+	border-left: 2px solid#64748b;
+	background-color: #cbd5e1;
 }
