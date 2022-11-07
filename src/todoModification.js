@@ -25,10 +25,11 @@ function removeTodoItem(title) {
 function editTodoItem(title) {
 	const filteredItem = temporalStorage.filter((i) => i.title === title);
 	let editedItem = {
-		title: prompt('new title:'),
+		title: 'Run Away',
 	};
 	removeTodoItem(title);
-	addTodoItem(title);
+	addTodoItem(editedItem);
+	return temporalStorage;
 }
 
 function returnObjectArray() {
