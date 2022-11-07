@@ -1,1 +1,1 @@
-(()=>{"use strict";let t=[];console.log(function(e,i,o,r){let l={title:"title",description:"desc",dueDate:"date",priority:"prio"};return t.push(l),t}())})();
+(()=>{"use strict";let e=[];function t(t,i,r,o){let c={title:t,description:i,dueDate:r,priority:o};return e.push(c),e}t("title","desc","date","prio"),t("beep","desc","date","prio"),t("rawr","desc","date","prio"),console.log(function(t){const i=e.filter((e=>"rawr"===e.title));let r;return""!==i&&(r=e.indexOf(i),e.splice(r,1)),e}())})();
